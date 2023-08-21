@@ -128,7 +128,7 @@ ihtHook <- function(fitBestSubset,
 
     prior <- Cyclops::createPrior(priorType$types, variance = variance,
                                   forceIntercept = ihtPrior$forceIntercept)
-
+    prior$uniqueCheck <- FALSE
     # TODO: Save current log-likelihood
     # TODO: Set stepSizeMultiplier (we will hack in a function to do this for prototyping)
 
